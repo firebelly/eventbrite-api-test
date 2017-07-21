@@ -1,0 +1,5 @@
+{
+    "require": {
+        "jamiehollern/eventbrite": "^1.0"
+    }
+}

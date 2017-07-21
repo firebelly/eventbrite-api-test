@@ -9,11 +9,11 @@ require_once('vendor/autoload.php');
 // Thanks Jamie!
 use jamiehollern\eventbrite\Eventbrite;
 
-// Auth Key is in uncommitted seperate file
+// $auth_key is in uncommitted seperate file
 include('auth_key.php');
 
 // Make an eventbrite obj
-$eventbrite = new Eventbrite($auth_key); // Auth key
+$eventbrite = new Eventbrite($auth_key);
 
 // Returns true if you can connect.
 $can_connect = $eventbrite->canConnect();

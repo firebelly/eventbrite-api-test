@@ -11,6 +11,8 @@ use jamiehollern\eventbrite\Eventbrite;
 
 // $auth_key is in uncommitted seperate file
 include('auth_key.php');
+// The auth key is in 1password under: 
+// 'Eventbrite bryant@fb private api token'
 
 // Make an eventbrite obj
 $eventbrite = new Eventbrite($auth_key);
@@ -35,7 +37,6 @@ $tickets = $eventbrite->get('events/'.$id.'/ticket_classes/');
 $ticket_classes = $tickets["body"]["ticket_classes"]
 
 ?>
-
 
 <h1>Event Brite API test:</h1>
 
